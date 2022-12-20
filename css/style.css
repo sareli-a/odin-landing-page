@@ -1,0 +1,141 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+    color: black;
+}
+
+/*  Header */
+
+.header {
+    margin: 0;
+    padding: 0;
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav bar */
+
+.nav-bar {
+    margin: 0;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar .logo {
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.nav-bar ul {
+    margin-bottom: 30px;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+/* Hero text section */
+
+.hero-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.header img {
+    height: 400px;
+    width: auto;
+}
+
+/* Middle section */
+
+.middle {
+    background-color: white;
+    color: black;
+}
+
+.middle h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+}
+
+.middle .container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.middle .item {
+    height: 200px;
+    width: 200px;
+    border: 10px solid rgb(65, 176, 212);
+    border-radius: 25px;
+    text-align: center;
+}
+
+/*  Quote section */
+
+.end {
+    background-color: slategrey;
+    color: black;
+    margin: 0;
+    padding: 100px;
+}
+
+.end .quote {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+/*  Call to action */
+
+.action {
+    margin: 100px 150px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgb(65, 176, 212);
+    color: white;
+}
+
+
+/* Footer */
+
+footer {
+    height: 50px;
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General items */
+.subtext {
+    font-size: 14px;
+}
+
+button {
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
