@@ -8,6 +8,8 @@
 html {
     background-color: white;
     color: black;
+    /* display: flex;
+    justify-content: center; */
 }
 
 /*  Header */
@@ -25,21 +27,20 @@ html {
 
 .nav-bar {
     margin: 0;
-    padding: 10px 50px;
+    padding: 10px 60px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .nav-bar .logo {
     font-weight: 800;
-    margin-bottom: 30px;
 }
 
 .nav-bar ul {
-    margin-bottom: 30px;
-    padding: 0;
+    padding: 0 15px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 /* Hero text section */
@@ -47,7 +48,19 @@ html {
 .hero-text {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 50px 75px;
+    max-height: 500px;
+    gap: 30px;
+}
+
+.hero-text .left {
+    max-height: 500px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 5px;
 }
 
 .hero-text h1 {
@@ -57,8 +70,9 @@ html {
 }
 
 .header img {
-    height: 400px;
-    width: auto;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Middle section */
@@ -66,6 +80,7 @@ html {
 .middle {
     background-color: white;
     color: black;
+    margin: 20px 20px;
 }
 
 .middle h1 {
@@ -76,18 +91,39 @@ html {
 }
 
 .middle .container {
+    gap: 5px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .middle .item {
+    margin: 20px;
+    max-height: 300px;
+    max-width: 200px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+}
+
+.item:nth-of-type(2) {
+    order: 2;
+}
+
+.item:nth-of-type(3) {
+    order: 1;
+}
+
+.item img {
     height: 200px;
     width: 200px;
+    border-radius: 15px;
     border: 10px solid rgb(65, 176, 212);
-    border-radius: 25px;
-    text-align: center;
 }
 
 /*  Quote section */
@@ -104,6 +140,12 @@ html {
     font-weight: 300;
 }
 
+.end .attribution {
+    font-weight: 600;
+    text-align: end;
+    padding-top: 20px;
+}
+
 /*  Call to action */
 
 .action {
@@ -112,6 +154,15 @@ html {
     border-radius: 25px;
     background-color: rgb(65, 176, 212);
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action .left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 
@@ -127,15 +178,26 @@ footer {
 }
 
 /* General items */
+
 .subtext {
     font-size: 14px;
 }
 
 button {
     background-color: aliceblue;
-    padding: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-color: white;
+    text-align: center;
+    color: #1F2937;
+    font-weight: 700;
 }
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
